@@ -1,0 +1,30 @@
+#top {
+  background-color: #202536;
+  color: #FFF;
+  padding: 15px 60px 80px 60px;
+  
+}
+#navbar {
+  
+  display: flex;
+  justify-content: space-between;
+  
+}
+#top h1 {
+  margin-top: 120px;
+  font-size: 60px;
+}
+
+#top p {
+  margin-top: -40px;
+  margin-bottom: 50px;
+  color: #C3C5C8;
+}
+
+#top button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none;
+}

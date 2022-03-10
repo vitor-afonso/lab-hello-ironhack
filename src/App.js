@@ -1,72 +1,31 @@
 // jshint esversion:8
-
-import React from 'react';
-
-import menuTop from './images/menu-top.svg';
-import ironhackLogo from './images/ironhack-logo.svg';
-import reactLogo from './images/react-logo.svg';
-import icon1 from './images/icon1.png';
-import icon2 from './images/icon2.png';
-import icon3 from './images/icon3.png';
-import icon4 from './images/icon4.png';
-
-const imageMenuTop = <img src={menuTop} alt="menu top" />;
-const logo = <img src={ironhackLogo} alt="logo" />;
-const iconOne = <img src={icon1} alt="icon declarative" />;
-const iconTwo = <img src={icon2} alt="icon components" />;
-const iconThree = <img src={icon3} alt="icon single-way" />;
-const iconFour = <img src={icon4} alt="icon jsx" />;
+import './App.css';
+import React from "react";
+import { Component1 } from "./Components/Component1";
+import { Component2 } from "./Components/Component2";
+import { Component3 } from "./Components/Component3";
+import { Component4 } from "./Components/Component4";
+import { Component5 } from "./Components/Component5";
 
 const App = () => {
+  return (
+    <div className="App">
+      <Component1 />
 
-    return (
-        <div className="App">
+      <section id="down">
 
-            <section id='top'>
-                <nav id='navbar'>
-                    {logo}
-                    {imageMenuTop}
-                </nav>
+        <Component2 />
 
-                <h1>Say hello to <br/>ReactJS</h1>
+        <Component3 />
 
-                <p>You will learn how to use<br/> 
-                the most popular frontend library,<br/> 
-                and become a super Ninja developer.</p>
-            
-                <button>Awesome!</button>
-            </section>
+        <Component4 />
 
-            <section id='down'>
-                <div>
-                    {iconOne}
-                    <h2>Declarative</h2>
-                    <p>React makes it <br/>
-                    painless to create <br/>
-                    interactive Uls.</p>
-                </div>
-                <div>
-                    {iconTwo}
-                    <h2>Components</h2>
-                    <p>Build encapsulated <br/>components that <br/>manage their state.</p>
-                </div>
-                <div>
-                    {iconThree}
-                    <h2>Single-Way</h2>
-                    <p>A set of immutable <br/>values are passed to <br/>
-                    the component's.</p>
-                </div>
-                <div>
-                    {iconFour}
-                    <h2>JSX</h2>
-                    <p>Statically-typed, <br/>
-                    designed to run on <br/>
-                    modern browsers</p>
-                </div>
-            </section>
-        </div>
-    );
+        <Component5 />
 
+      </section>
+      
+    </div>
+  );
 };
 
 export default App;
